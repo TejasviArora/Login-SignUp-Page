@@ -67,7 +67,7 @@ class LoginPage extends StatelessWidget {
             ),
             Container(
               child: InkWell(
-                  onTap:(){},
+                onTap: () {},
                 child: Center(
                     child: Text(
                   "Login",
@@ -81,8 +81,9 @@ class LoginPage extends StatelessWidget {
               width: 350,
               height: 60,
               decoration: BoxDecoration(
-                  gradient:
-                      LinearGradient(colors: [Colors.pink, Colors.purple]),
+                  color: Color(0xFFFC9483),
+                  // gradient:
+                  //     LinearGradient(colors: [Colors.pink, Colors.purple]),
                   borderRadius: BorderRadius.all(Radius.circular(20))),
             ),
             SizedBox(

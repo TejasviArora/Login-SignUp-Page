@@ -117,11 +117,13 @@ class SignUpPage extends StatelessWidget {
                 width: 350,
                 height: 60,
                 decoration: BoxDecoration(
-                    gradient:
-                        LinearGradient(colors: [Colors.pink, Colors.purple]),
-                    borderRadius: BorderRadius.all(Radius.circular(20))),
+                  color: Color(0xFFFC9483),
+                  // gradient:
+                  //     LinearGradient(colors: [Colors.pink, Colors.purple]),
+                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                ),
               ),
-              SizedBox(height: 30),
+              SizedBox(height: 20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
