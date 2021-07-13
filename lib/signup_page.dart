@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:login_signup_page/login_page.dart';
 import 'textinput_fields.dart';
 
 class SignUpPage extends StatelessWidget {
+  TextEditingController emailController = TextEditingController();
+  TextEditingController pwdController = TextEditingController();
+  TextEditingController userNameController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -89,18 +91,21 @@ class SignUpPage extends StatelessWidget {
                   data: "User Name",
                   inputType: TextInputType.text,
                   obscureText: false,
+                  customController: userNameController,
                 ),
                 SizedBox(height: 30),
                 TextInputs(
                   data: "Email",
                   inputType: TextInputType.emailAddress,
                   obscureText: false,
+                  customController: emailController,
                 ),
                 SizedBox(height: 30),
                 TextInputs(
                   data: "Password",
                   inputType: TextInputType.text,
                   obscureText: true,
+                  customController: pwdController,
                 ),
                 SizedBox(height: 30),
                 Container(
@@ -120,8 +125,6 @@ class SignUpPage extends StatelessWidget {
                   height: 60,
                   decoration: BoxDecoration(
                     color: Color(0xFFFC9483),
-                    // gradient:
-                    //     LinearGradient(colors: [Colors.pink, Colors.purple]),
                     borderRadius: BorderRadius.all(Radius.circular(20)),
                   ),
                 ),
